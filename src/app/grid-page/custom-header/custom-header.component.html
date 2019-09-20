@@ -1,0 +1,19 @@
+<div class="ag-header-group-cell-label">
+  <div *ngIf="params.column.userProvidedColDef.enableSelAll"
+       class="check-box-frm"
+       [ngSwitch]="checkState" 
+       (click)="onChange()">
+    <span class="ag-icon ag-icon-checkbox-unchecked" 
+      *ngSwitchCase="0">
+    </span>
+    <span class="ag-icon ag-icon-checkbox-checked"
+      *ngSwitchCase="1">
+    </span>
+    <span class="ag-icon ag-icon-checkbox-indeterminate"
+      *ngSwitchCase="2">
+    </span>
+  </div>
+  <div class="customHeaderLabel">{{this.params.displayName}}</div>
+</div>
+
+

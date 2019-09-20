@@ -1,0 +1,12 @@
+<h1 class="app-header-text">Data grid demo app</h1>
+<div (window:resize)="onFrameResize()" class="grid-containier">
+  <ag-grid-angular #agGrid
+    class="ag-theme-balham"
+    [gridOptions]="gridOptions"
+    [frameworkComponents]="frameworkComponents"
+    [statusBar]="statusBar"
+    [getRowHeight]="getRowHeight"
+    [getContextMenuItems]="getContextMenuItems"
+    (gridReady)="onGridReady($event)">
+  </ag-grid-angular>
+</div>

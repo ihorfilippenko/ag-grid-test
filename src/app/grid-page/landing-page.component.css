@@ -1,0 +1,14 @@
+.app-header-text {
+    padding-left: 30px;
+}
+
+.grid-containier {
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.grid-containier ag-grid-angular {
+    height: 90%;
+}
